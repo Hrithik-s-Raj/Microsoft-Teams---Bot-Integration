@@ -1,0 +1,51 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "Image",
+          "url": "${logoUrl}",
+      
+      
+
+          "size": "Stretch", "height": "40px", "horizontalAlignment": "Center"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${title}",
+          "size": "Large",
+          "weight": "Bolder",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "${appName}",
+          "isSubtle": true,
+          "color": "Accent",
+          "weight": "Bolder",
+          "size": "Small",
+          "spacing": "None"
+        },
+        {
+          "type": "TextBlock",
+          "text": "${description}",
+          "isSubtle": true,
+          "wrap": true
+        }
+      ],
+      "style": "emphasis"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "View WorkItem",
+      "url": "${notificationUrl}"
+    }
+  ]
+}
+ 
